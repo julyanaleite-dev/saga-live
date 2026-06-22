@@ -2,6 +2,8 @@
 
 MVP criado em HTML, CSS e JavaScript para apresentacoes gamificadas no estilo Kahoot/Mentimeter, com identidade visual institucional SENAI.
 
+O arquivo `index.html` e autocontido: possui HTML, CSS e JavaScript no mesmo arquivo, facilitando a publicacao via GitHub Pages e a abertura direta no navegador.
+
 ## Como abrir rapidamente
 
 1. Abra o arquivo `index.html` em um navegador moderno.
@@ -20,9 +22,6 @@ MVP criado em HTML, CSS e JavaScript para apresentacoes gamificadas no estilo Ka
 - Enquete em tempo real simulada.
 - Nuvem de palavras.
 - Preenchimento de lacunas.
-- Arrastar e soltar.
-- Jogo da memoria.
-- Cenario ramificado.
 - Ranking por acerto e tempo de resposta.
 - Feedback audiovisual: confete, sirene e efeitos sonoros.
 - Dashboard live com taxa de acerto, tempo medio, respostas e engajamento.
@@ -44,14 +43,19 @@ Este pacote entrega um MVP navegavel e apresentavel. Para uso real com varios ce
 ```text
 saga-live/
 ├─ index.html
-├─ assets/
-│  ├─ css/style.css
-│  └─ js/app.js
 └─ server-mvp/
    ├─ package.json
    ├─ src/server.js
    └─ db/schema.sql
 ```
+
+## Publicacao com GitHub Pages
+
+1. Acesse **Settings** do repositorio.
+2. Entre em **Pages**.
+3. Em **Build and deployment**, selecione **Deploy from a branch**.
+4. Escolha a branch `main` e a pasta `/root`.
+5. Salve e aguarde o GitHub gerar o link publico.
 
 ## Proxima evolucao recomendada
 
