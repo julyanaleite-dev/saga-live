@@ -4,28 +4,59 @@ MVP criado em HTML, CSS e JavaScript para apresentacoes gamificadas no estilo Ka
 
 O arquivo `index.html` e autocontido: possui HTML, CSS e JavaScript no mesmo arquivo, facilitando a publicacao via GitHub Pages e a abertura direta no navegador.
 
+## Atualizacao desta versao
+
+- Apresentacao ampliada para seguir o roteiro rico da **Nova SAGA SENAI de Inovacao 2026**.
+- Estrutura com **68 slides**, organizados em **9 secoes**.
+- Cada secao tem capa, pergunta de abertura, blocos explicativos e atividade de fechamento.
+- Inclusao de integracao com **Google Planilhas + Apps Script** para armazenar sessoes, participantes, respostas e resumos.
+
 ## Como abrir rapidamente
 
-1. Abra o arquivo `index.html` em um navegador moderno.
-2. Clique em **Modo conectado** ou **Modo auditorio**.
-3. No modo conectado, use **Adicionar turma demo** para simular participantes.
-4. Clique em **Iniciar pergunta**, responda ou use **Responder automaticamente**.
-5. Gere o relatorio final e baixe o CSV.
+1. Abra o arquivo `index.html` em um navegador moderno ou publique com GitHub Pages.
+2. Clique em **Configurar Planilha** e cole a URL do Apps Script, se desejar armazenar os dados.
+3. Clique em **Modo conectado** ou **Modo auditorio**.
+4. Navegue pelos 68 slides.
+5. Nas atividades interativas, clique em **Iniciar pergunta** e registre respostas.
+6. Gere o relatorio final e baixe o CSV.
+
+## Google Planilhas + Apps Script
+
+A pasta `google-sheets/` contem:
+
+```text
+google-sheets/
+├─ Code.gs
+└─ README.md
+```
+
+Use esse script em uma planilha Google para criar as abas:
+
+- `sessoes`
+- `participantes`
+- `respostas`
+- `resumos`
+- `eventos`
+
+Depois de publicar o Apps Script como Web App, cole a URL terminada em `/exec` no botao **Configurar Planilha** do prototipo.
 
 ## Recursos implementados no prototipo estatico
 
-- Slideshow interativo.
+- Slideshow interativo com 68 slides.
 - Modo Auditorio e Modo Conectado simulado.
 - Cadastro de participantes: nome, funcao e escola SENAI.
 - Multipla escolha.
 - Verdadeiro ou falso.
-- Enquete em tempo real simulada.
 - Nuvem de palavras.
 - Preenchimento de lacunas.
+- Ordenacao de trilha.
+- Jogo da memoria conceitual.
+- Associacao de personas e responsabilidades.
+- Cenario ramificado.
 - Ranking por acerto e tempo de resposta.
 - Feedback audiovisual: confete, sirene e efeitos sonoros.
 - Dashboard live com taxa de acerto, tempo medio, respostas e engajamento.
-- Relatorio final e exportacao CSV.
+- Relatorio final, exportacao CSV e envio para Google Sheets.
 
 ## Atalhos
 
@@ -43,6 +74,9 @@ Este pacote entrega um MVP navegavel e apresentavel. Para uso real com varios ce
 ```text
 saga-live/
 ├─ index.html
+├─ google-sheets/
+│  ├─ Code.gs
+│  └─ README.md
 └─ server-mvp/
    ├─ package.json
    ├─ src/server.js
@@ -59,7 +93,8 @@ saga-live/
 
 ## Proxima evolucao recomendada
 
-1. Publicar o prototipo via GitHub Pages.
-2. Evoluir o modo conectado com servidor real-time.
-3. Persistir sessoes, participantes e respostas em PostgreSQL.
-4. Criar exportacao PDF/CSV do relatorio final por escola e turma.
+1. Validar a gravacao na planilha Google.
+2. Criar dashboards no Google Sheets ou Looker Studio.
+3. Evoluir o modo conectado com servidor real-time.
+4. Persistir sessoes, participantes e respostas em banco quando houver escala.
+5. Criar exportacao PDF/CSV do relatorio final por escola e turma.
